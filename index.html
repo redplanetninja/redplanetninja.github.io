@@ -5,13 +5,22 @@
     <title>The Red Planet In Space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/audio.min.js"></script>
 </head>
 <body>
 
-<audio controls preload="none" style=" width:300px;">
-    <source src="http://138.68.103.111:8000/airtime_128?type=.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+
+
+<audio src="http://138.68.103.111:8000/airtime_128?type=.mp3" type="audio/mpeg" preload="none" style=" width:300px;" />
+
+
+<script>
+    audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+    });
+</script>
+
+
 
 </body>
 </html>

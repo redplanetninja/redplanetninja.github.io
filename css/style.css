@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-audio {
+.audiojs {
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
